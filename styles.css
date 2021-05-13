@@ -1,0 +1,75 @@
+:root{
+    --mustard: #ffc996;
+    --orange: #ff8474;
+    --dark-violet: #583d72;
+    --light-violet: #9f5f80;
+    --dark-blue: #00adb5;
+    --light-blue: #aad8d3;
+}
+
+body{
+    background-image: linear-gradient(to right, var(--orange),var(--mustard));
+}
+
+.main-box{
+    padding: 3% 20%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 4fr 1.5fr;
+    gap: 20px;
+    position: relative;
+}
+
+.wishes{
+    font-family: 'Fascinate', cursive;
+    font-size: 6.5rem;
+    line-height: 0.5;
+    padding: 1rem 4rem;
+    background-image: linear-gradient(to left, var(--dark-violet), var(--light-violet));
+
+    color: var(--orange);
+
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wishes p{
+    transition-property: font,color;
+    transition-duration: 300ms;
+}
+
+.wishes p:hover{
+    font-size: 7rem;
+    color: var(--mustard);
+
+}
+
+.msg{
+    background-image: linear-gradient(var(--dark-blue),var(--light-blue));
+    z-index: -10;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2rem;
+}
+
+.msg h1{
+    margin: 1rem;
+    font-size: 5rem;
+    font-family: 'Fascinate', cursive;
+    color: var(--light-blue);
+}
+
+.msg img{
+    height: 6em;
+    margin-left: 2em ;
+}
+
+.msg p{
+    margin-top: 1rem;
+    font-family: 'Fascinate', cursive;
+    font-size: 25px;
+    line-height: 1.5;
+    color: var(--dark-violet);
+}
